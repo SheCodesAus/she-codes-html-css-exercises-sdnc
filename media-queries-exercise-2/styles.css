@@ -14,9 +14,12 @@ header {
 h2 {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    padding: 10px;
+    margin: 0;
     background-color: #5e7992;
     color: #fff;
     font-size: 1rem;
+    text-align: center;
 }
 
 p {
@@ -28,24 +31,35 @@ form {
     border-bottom-right-radius: 5px;
 }
 
+#form-wrapper{
+    
+}
+
 label {
     font-weight: bold;
     color: #5e7992;
+    display: block;
 }
 
 input {
     box-sizing: border-box;
     border: 1px solid #ebeeef;
     background-color: #f9fafa;
+    width: 100%;
+    padding: 0.8vh;
 }
 
 .form-item {
+    padding: 15px;
 }
 
 button {
     background-color: #00d982;
     border: none;
     color: #fff;
+    width: 100%;
+    padding: 1.5vh;
+    margin: 1.2vh 0 1.2vh 0;
 }
 
 input,
@@ -54,3 +68,28 @@ button {
     border-radius: 2px;
 }
 
+@media (min-width: 600px) {
+    .row {
+        width: calc(100% / 2 - 10px);
+        display: inline-block;
+    }
+
+    input {
+        width: 100;
+        padding: auto 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+    }
+    
+    header {
+     
+    }
+
+    #form-wrapper {
+        
+    }
+
+}
